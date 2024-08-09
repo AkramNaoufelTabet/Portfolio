@@ -333,7 +333,7 @@ section {
 
 #experience {
   position: relative;
-  height: 195vh;
+  min-height: 195vh;
 }
 
 .experience-sub-title {
@@ -383,7 +383,7 @@ article .icon {
 /* key skills  */
 #skills {
   position: relative;
-  height: 190vh;
+  min-height: 190vh;
 }
 
 .skill-sub-title {
@@ -423,7 +423,7 @@ article .icon {
 
 #projects {
   position: relative;
-  height: 170vh;
+  min-height: 170vh;
 }
 
 .color-container {
