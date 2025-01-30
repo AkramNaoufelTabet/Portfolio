@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <script>
+      function showPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+window.onclick = function(event) {
+  let popup = document.getElementById("popup");
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+};
+
+    </script>
+
+    
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>This project was developed for Soft-Innovation and is private due to confidentiality agreements.  
+           Unfortunately, I cannot publish it or provide access.</p>
+      </div>
+    </div>
+    
     <nav id="desktop-nav">
       <div class="logo">Akram Naoufel Tabet</div>
       <div>
@@ -44,11 +71,11 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Akram Naoufel Tabet</h1>
-        <p class="section__text__p2">Graduate Data Scientist</p>
+        <p class="section__text__p2">Graduate Data Scientist/ML Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/AKRAM_CV_UPDATED.pdf')"
+            onclick="window.open('./assets/CV_JOB_DEV.pdf')"
           >
             Download CV
           </button>
@@ -113,7 +140,7 @@
           <div class="text-container">
             <p>
               As a State Engineer in Computer Science specialising in Information Systems and Technology, and a graduate in Data Science
-from the University of Westminster, I possess a strong foundation in machine learning, business intelligence, and data warehousing. With experience in NLP through an internship in Paris, and as a junior Salesforce administrator, I have also gained skills in
+from the University of Westminster with a Distinction Award, I possess a strong foundation in machine learning, business intelligence, and data warehousing. With experience in NLP through an internship in Paris, and as a junior Salesforce administrator, I have also gained skills in
 generative AI,LangChain, Amazon Cloud and DevOps practices. Passionate about harnessing emerging technologies, I strive to
 drive innovation and craft insightful solutions in the realms of AI, cloud technologies, and advanced analytics
             </p>
@@ -722,6 +749,32 @@ drive innovation and craft insightful solutions in the realms of AI, cloud techn
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/AkramNaoufelTabet/AN-INTERACTIVE-CHATBOT-SOLUTION-FOR-E-COMMERCE-USING-GENERATIVE-AI-AND-AWS'"
+ >
+                Github
+              </button>
+            </div>
+          </div>
+
+                    <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Real-Time Data Integration for Telecommunications</h2>
+            <div class="container">
+            <ul>
+              <li>Designed and deployed a scalable real-time data integration pipeline for Inwi, ensuring seamless synchronization between multiple telecom data sources and improving operational efficiency.</li>
+              <li>Implemented automated data validation and transformation processes using Talend Data Integration and Salesforce, reducing data inconsistencies and enhancing decision-making accuracy</li>
+              <li><span class="bold">Technologies:</span>Talend Data Integration, Salesforce, MongoDB</li>
+          </ul>
+          </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="showPopup()"
               >
                 Github
               </button>
